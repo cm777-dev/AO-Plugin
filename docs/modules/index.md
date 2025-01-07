@@ -34,6 +34,12 @@ Agent Optimization Pro is built with a modular architecture, allowing for flexib
 - Search analytics
 - Query optimization
 
+### 6. Browser Automation
+- Automated browser control
+- Web scraping
+- Custom automation scripts
+- Browser instance management
+
 ## Module Management
 
 ### Enabling/Disabling Modules
