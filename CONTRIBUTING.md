@@ -102,12 +102,6 @@ We use [SemVer](http://semver.org/) for versioning:
 * MINOR version for backwards-compatible functionality additions
 * PATCH version for backwards-compatible bug fixes
 
-## Community
-
-* Join our [Discord community](https://discord.gg/your-invite-link)
-* Follow us on [Twitter](https://twitter.com/your-twitter)
-* Read our [blog](https://your-blog.com)
-
 ## Recognition
 
 Contributors will be recognized in:
