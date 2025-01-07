@@ -1,0 +1,49 @@
+name: Publish Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          extensions: json, dom, curl, libxml, mbstring
+          coverage: none
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer install --no-dev --optimize-autoloader
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
+      - name: Install dependencies
+        run: composer install --no-dev --optimize-autoloader
+
+      - name: Publish to GitHub Packages
+        run: |
+          composer config github-oauth.github.com ${{ secrets.GITHUB_TOKEN }}
+          composer config repositories.github '{"type": "composer", "url": "https://api.github.com/user/packages/composer/json"}'
+          composer config platform.php 7.4
+          composer publish --no-dev

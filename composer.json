@@ -1,0 +1,46 @@
+{
+    "name": "cm777-dev/agent-optimization-pro",
+    "description": "The ultimate WordPress plugin to prepare your website for the future of AI-driven discovery and decision-making",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "CM777",
+            "homepage": "https://github.com/cm777-dev"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "AgentOptimizationPro\\": "includes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AgentOptimizationPro\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf"
+    },
+    "support": {
+        "issues": "https://github.com/cm777-dev/AO-Plugin/issues",
+        "source": "https://github.com/cm777-dev/AO-Plugin"
+    }
+}
