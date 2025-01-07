@@ -1,0 +1,10 @@
+root: ./
+
+structure:
+  readme: index.md
+  summary: SUMMARY.md
+
+redirects:
+  api: api/index.md
+  modules: modules/index.md
+  integration: integration/index.md
