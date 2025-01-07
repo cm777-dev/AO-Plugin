@@ -15,6 +15,7 @@ This guide covers various ways to integrate Agent Optimization Pro with your Wor
    - Analytics platforms
    - Search engines
    - Content delivery networks
+   - CrewAI integration
 
 3. **API Integration**
    - REST API
