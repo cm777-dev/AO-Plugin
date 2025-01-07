@@ -49,11 +49,15 @@ agent-optimization-pro/
 
 ## Documentation
 
-Visit our [documentation](https://example.com/docs) for detailed information about:
-- Configuration options
-- API endpoints
-- Integration guides
-- Best practices
+For detailed documentation, visit our [GitBook Documentation](https://cm777.gitbook.io/cm777-docs).
+
+The documentation covers:
+- Getting Started Guide
+- Configuration Options
+- Module Documentation
+- API Reference
+- Integration Guides
+- Best Practices
 
 ## Support
 
